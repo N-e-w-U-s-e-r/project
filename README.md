@@ -1,2 +1,2 @@
 # project
-A project based on 
+A project based on ML-KNN
