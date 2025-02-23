@@ -1,0 +1,138 @@
+body{
+    font-family: Arial;
+    overscroll-behavior: none;
+    
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    background-color: black;
+    color: white;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    border: transparent;
+    padding: 0.75rem 1.25rem;
+    background-color: #f60;
+    vertical-align: middle;
+    transition: 200ms ease-in-out;
+}
+button:hover{
+    background-color: #f80;
+
+}
+button:disabled,button:disabled:hover{
+    background-color: gray;
+    cursor: default;
+}
+.row{
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+}
+.row:nth-child(even){
+    background-color: black;
+}
+.thumb{
+    width: 100%;
+    filter: invert(1);
+}
+.rowLabel{
+    flex: 2 1 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 15%;
+    margin-left: 3rem;
+    font-weight: bold;
+}
+.sampleContainer{
+    flex: 1 1 0;
+    text-align: center;
+    overflow: hidden;
+    margin: 2px;
+    outline: 2px solid #f60;
+    border-radius: 5px;
+    text-transform: capitalize;
+    max-width: 8%;
+}
+.blur{
+    filter: invert(1) blur(5px);
+}
+.emphasize{
+    background-color: #aa0 !important;
+}
+#container{
+    margin-top: 50px;
+    width:calc(100% - 400px);
+}
+#chartContainer{
+    position: fixed;
+    right: 0;
+    top: 60%;
+    transform: translate(0,-50%);
+    z-index: 2;
+    color: black;
+}
+
+#inputContainer{
+    position: fixed;
+    right: 465px;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    margin: 10px;
+    z-index: 1;
+}
+
+#controlPanel{
+    position:fixed;
+    right: 0;
+    left: 0;
+    width: 2500px;
+    text-align: center;
+    padding: 0 10px;
+    z-index: 1;
+}
+#predictedLabelContainer{
+    color: #f60;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+}
+#statistics{
+    font: 20px;
+    padding: 20px;
+}
+
+input,#instructions{
+    border: transparent;
+    outline: 2px solid #f60;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    vertical-align: middle;
+    transition: 200ms ease-in-out;
+}
+#instructions{
+    margin-right: 0.75rem;
+}
+
+.flagged{
+    background-color: red !important;
+}

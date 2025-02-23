@@ -1,0 +1,27 @@
+body{
+    font-family: 'Arial';
+    background-color: skyblue;
+    margin: 0;
+}
+h1{
+    margin: 0 5% 0;;
+}
+table,td{
+    margin: 0 5% 0;
+    border: 2px solid white;
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+thead{
+    font-weight: bold;
+}
+#chartContainer{
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.emphasize{
+    background-color: yellow;
+}
