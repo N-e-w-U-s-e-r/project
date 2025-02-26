@@ -2,7 +2,7 @@ const utils = {};
 
 utils.flaggedUsers = [];
 
-utils.flaggedSamples = [20];
+utils.flaggedSamples = [];
 
 utils.styles = {
     car: { color: 'yellow', text: '🚗' },
